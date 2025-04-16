@@ -183,6 +183,7 @@
   krita
   swaybg
   taisei
+  gajim
   ];
   
   programs.neovim = {
