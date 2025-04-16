@@ -24,7 +24,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  networking.networkmanager.wifi.powersave = false;
+  networking.networkmanager.wifi.powersave = true;
 
   # Set your time zone.
   time.timeZone = "Europe/London";
@@ -143,7 +143,6 @@
   dwlb
   fastfetch
   wmenu
-  ydotool
   imagemagick
   picard
   mpc
@@ -184,6 +183,7 @@
   swaybg
   taisei
   gajim
+  wlrctl
   ];
   
   programs.neovim = {

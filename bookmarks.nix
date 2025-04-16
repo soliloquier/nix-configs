@@ -5,5 +5,5 @@ pkgs.writeShellScriptBin "bookmarks" ''
 
 url="$(sed "s/\s*#.*//g; /^$/ d" ~/stor/bcomp/urls | wmenu -l 10)"
 
-[ -n "$url" ] && ydotool type "$url"
+[ -n "$url" ] && wlrctl keyboard type "$url"
 ''
