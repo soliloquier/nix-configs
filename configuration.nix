@@ -131,32 +131,24 @@
   (import ./bookmarks.nix  { inherit pkgs; })
   (import ./gur.nix { inherit pkgs; })
   ungoogled-chromium
-  dwl
   foot
   sbclPackages.hunchentoot
-  goldendict-ng
   unzip
   vesktop
   ffmpeg
   newsboat
   timeline
-  dwlb
   fastfetch
-  wmenu
   imagemagick
-  picard
   mpc
   mpd
   ncmpcpp
-  hugo
   libreoffice
   nicotine-plus
   yt-dlp
   groff
   pandoc
   mono5
-  hacksaw
-  shotgun
   anki
   sxiv
   sbcl
@@ -166,7 +158,6 @@
   monero-gui
   wakeonlan
   zathura
-  git
   emacs
   nmap
   syncthing
@@ -177,25 +168,14 @@
   htop
   newsboat
   keepassxc
-  home-manager
   krita
   wbg
   taisei
   gajim
   wlrctl
+  git
   ];
   
-  programs.neovim = {
-     enable = true;
-     vimAlias = true;
-     defaultEditor = true;
-     configure = {
-     customRC = ''
-        set nu
-	colorscheme elflord
-     '';
-     };
-  };
 
 
   # Some programs need SUID wrappers, can be configured further or are
