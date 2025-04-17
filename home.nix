@@ -4,6 +4,7 @@
 
    home.packages = with pkgs; [
    dwl
+   dwlb
    wbg
    wlrctl
    newsboat
