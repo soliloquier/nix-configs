@@ -65,7 +65,7 @@
   # services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -169,13 +169,23 @@
   newsboat
   keepassxc
   krita
-  wbg
   taisei
   gajim
   wlrctl
   git
   ];
   
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    vimAlias = true;
+    configure = {
+    customRC = ''
+       set number
+       colorscheme elflord
+    '';
+    };
+  };
 
 
   # Some programs need SUID wrappers, can be configured further or are
