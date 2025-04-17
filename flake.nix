@@ -17,7 +17,6 @@
       ];
     };
 
-   #let pkgs = import nixpkgs { inherit system; overlays = [ ( final: prev: { dwl = prev.dwl.overrideAttrs { patches = [ ./dwl-patches/autostart.patch ]; }; } ) ]; }
    nixpkgs.overlays = [ ( final: prev: { dwl = prev.dwl.overrideAttrs { patches = [ ./dwl-patches/autostart.patch ]; }; }) ];
   };
 }

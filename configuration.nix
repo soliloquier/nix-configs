@@ -24,7 +24,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  networking.networkmanager.wifi.powersave = true;
+  networking.networkmanager.wifi.powersave = false;
 
   # Set your time zone.
   time.timeZone = "Europe/London";
@@ -163,7 +163,6 @@
   nicotine-plus
   pavucontrol
   alsa-utils
-  swaybg
   monero-gui
   wakeonlan
   zathura
@@ -180,7 +179,7 @@
   keepassxc
   home-manager
   krita
-  swaybg
+  wbg
   taisei
   gajim
   wlrctl
