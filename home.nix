@@ -3,14 +3,63 @@
    home.username = "neo";
 
    home.packages = with pkgs; [
+
+   # wm
    dwl
    dwlb
    wbg
+   wmenu
+   
+   #audio 
+   pavucontrol
+   alsa-utils
+
+   #music
+   mpd
+   mpc
+   ncmpcpp
+   picard
+   nicotine-plus
+
+   # cli tools
    wlrctl
    newsboat
    hugo
-   wmenu
-   picard
+   unzip
+   sxiv
+   htop
+   libnotify
+   nmap
+   mpv
+
+   # terminal emulator
+   foot 
+
+   # GUI
+   monero-gui
+   vesktop
+   gajim
+   keepassxc
+   syncthing
+
+   # studying
+   anki
+   timeline
+   libreoffice
+
+   # browers
+   firefox
+   ungoogled-chromium
+
+   # audio/image/text manipulation
+   imagemagick
+   ffmpeg
+   pandoc
+
+   # lisp
+   emacs
+   sbcl
+
    ];
 
    nixpkgs.overlays = [ ( final: prev: { dwl = prev.dwl.overrideAttrs { patches = [ ./dwl-patches/autostart.patch ]; }; }) ];

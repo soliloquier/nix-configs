@@ -130,48 +130,8 @@
   environment.systemPackages = with pkgs; [
   (import ./bookmarks.nix  { inherit pkgs; })
   (import ./gur.nix { inherit pkgs; })
-  ungoogled-chromium
-  foot
-  sbclPackages.hunchentoot
-  unzip
-  vesktop
-  ffmpeg
-  newsboat
-  timeline
-  fastfetch
-  imagemagick
-  mpc
-  mpd
-  ncmpcpp
-  libreoffice
-  nicotine-plus
-  yt-dlp
-  groff
-  pandoc
-  mono5
-  anki
-  sxiv
-  sbcl
-  nicotine-plus
-  pavucontrol
-  alsa-utils
-  monero-gui
   wakeonlan
-  zathura
-  emacs
-  nmap
-  syncthing
-  firefox 
   wget
-  mpv
-  libnotify
-  htop
-  newsboat
-  keepassxc
-  krita
-  taisei
-  gajim
-  wlrctl
   git
   ];
   
