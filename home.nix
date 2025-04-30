@@ -41,8 +41,12 @@
    gajim
    keepassxc
    syncthing
+   hexchat
+   hydrus
 
    # studying
+   pomodoro-gtk
+   zathura
    anki
    timeline
    libreoffice
@@ -60,10 +64,17 @@
    emacs
    sbcl
 
+   # games
+   gzdoom
+   minetest
+
+   # typesetting
+   texliveFull
+
    ];
 
    nixpkgs.overlays = [ ( final: prev: { dwl = prev.dwl.overrideAttrs { patches = [ ./dwl-patches/autostart.patch ]; }; }) ];
-   
+   nixpkgs.config.allowUnfree = true; 
    programs.home-manager.enable = true;
    home.stateVersion = "24.11";
 }
