@@ -24,7 +24,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  networking.networkmanager.wifi.powersave = true;
+  networking.networkmanager.wifi.powersave = false;
 
   # Set your time zone.
   time.timeZone = "Europe/London";
@@ -111,7 +111,7 @@
 
  # Configure DNS servers manually (this example uses Cloudflare and Google DNS)
  # IPv6 DNS servers can be used here as well.
- networking.nameservers = [
+  networking.nameservers = [
    "9.9.9.9"
  ];
 
@@ -134,7 +134,7 @@
   wget
   git
   ];
-  
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -164,8 +164,8 @@
   security.polkit.enable = true;
 
   # Open ports in the firewall.
-   networking.firewall.allowedTCPPorts = [ 22000 8384 2222 ];
-   networking.firewall.allowedUDPPorts = [ 21027 22000 2222 ];
+   networking.firewall.allowedTCPPorts = [ 22000 8384 2222];
+   networking.firewall.allowedUDPPorts = [ 21027 22000 2222];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 

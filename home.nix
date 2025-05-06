@@ -42,7 +42,7 @@
    keepassxc
    syncthing
    hexchat
-   hydrus
+   calibre
 
    # studying
    pomodoro-gtk
