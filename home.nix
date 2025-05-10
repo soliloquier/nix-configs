@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, pkgs, pkgs-stable, ...}:
 {
    home.username = "neo";
 
@@ -42,7 +42,6 @@
    keepassxc
    syncthing
    hexchat
-   calibre
 
    # studying
    pomodoro-gtk
@@ -73,7 +72,27 @@
 
    ];
 
+  programs.bash = {
+    enable = true;
+    enableCompletion = true;
+    
+    profileExtra = ''
+    [ -z $(echo $DISPLAY) ] && mpd && dwl -s 'dwlb'
+    '';
+
+    shellAliases = {
+       ncm = "ncmpcpp";
+       nb = "newsboat";
+    };
+  };
+
+    #programs.vscode = {
+    #  enable = true;
+    #  package = pkgs-stable.vscodium;
+    #};
+
    nixpkgs.overlays = [ ( final: prev: { dwl = prev.dwl.overrideAttrs { patches = [ ./dwl-patches/autostart.patch ]; }; }) ];
+
    nixpkgs.config.allowUnfree = true; 
    programs.home-manager.enable = true;
    home.stateVersion = "24.11";

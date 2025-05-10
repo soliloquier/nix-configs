@@ -134,7 +134,8 @@
   wget
   git
   ];
-
+  
+  services.tailscale.enable = true;
   programs.neovim = {
     enable = true;
     defaultEditor = true;
