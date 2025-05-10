@@ -79,7 +79,7 @@
     profileExtra = ''
     [ -z $(echo $DISPLAY) ] && mpd && dwl -s 'dwlb'
     '';
-
+    
     shellAliases = {
        ncm = "ncmpcpp";
        nb = "newsboat";
