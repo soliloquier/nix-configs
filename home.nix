@@ -13,6 +13,7 @@
    #audio 
    pavucontrol
    alsa-utils
+   audacious
 
    #music
    mpd
@@ -58,6 +59,7 @@
    imagemagick
    ffmpeg
    pandoc
+   krita
 
    # lisp
    emacs
@@ -65,10 +67,15 @@
 
    # games
    gzdoom
+   libresprite
    minetest
 
    # typesetting
    texliveFull
+
+   #wine
+   wineWowPackages.waylandFull
+   winetricks
 
    ];
 

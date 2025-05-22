@@ -189,4 +189,9 @@
   persist = true;
   keepEnv = true;
   }];
+
+    environment.sessionVariables = rec {
+    XDG_DESKTOP_DIR  = "$HOME/";
+    };
+
 }
